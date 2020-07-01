@@ -12,7 +12,10 @@
     <header class="main-header container">
       <a class="header-logo"><img src="img/logo.svg" width="163"  height="35" alt="Логотип компании"></a>
       <div class="header-line-1">
-        <div class="header-search-div"><input class="header-search" type="text" name="" value="" placeholder="Поиск по сайту"></div>
+        <form class="header-search-form" action="http://echo.htmlacademy.ru/" method="post">
+          <input class="header-search" type="text" name="" value="" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit" name="button">Найти</button>
+        </form>
         <a href="" class="enter">
           Войти
         </a>
@@ -24,8 +27,18 @@
         </a>
       </div>
       <div class="header-line-2">
-        <div class="product-catalog">
+        <a class="product-catalog">
           Каталог товаров
+        </a>
+        <div class="catalog-menu">
+          <ul class="style-none menu-c">
+            <li><a href="">Виртуальная реальность</a></li>
+            <li><a href="">Фитнес-браслеты</a></li>
+            <li><a href="">Квадрокоптер</a></li>
+            <li><a href="">Моноподы для селфи</a></li>
+            <li><a href="">Умные часы</a></li>
+            <li><a href="">Экшн-камеры</a></li>
+          </ul>
         </div>
         <ul class="style-none service">
           <li><a href="" class="delivery">Доставка</a></li>
@@ -64,101 +77,100 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog style-none">
           <li>
-            <a class="popular vr" href=""></a>
-            <a class="popular-text" href="">Виртуальная реальность</a>
+            <a class="popular-text vr" href="">Виртуальная реальность</a>
           </li>
           <li>
-            <a class="popular selfie" href=""></a>
-            <a class="popular-text" href="">Моноподы для селфи</a>
+            <a class="popular-text selfie" href="">Моноподы для селфи</a>
           </li>
           <li>
-            <a class="popular camera" href=""></a>
-            <a class="popular-text" href="">Экшн-камеры</a>
+            <a class="popular-text camera" href="">Экшн-камеры</a>
           </li>
           <li>
-            <a class="popular clock" href=""></a>
-            <a class="popular-text" href="">Фитнес-браслеты</a>
+            <a class="popular-text clock" href="">Фитнес-браслеты</a>
           </li>
           <li>
-            <a class="popular clock-2" href=""></a>
-            <a class="popular-text" href="">Умные часы</a>
+            <a class="popular-text clock-2" href="">Умные часы</a>
           </li>
           <li>
-            <a class="popular copter" href=""></a>
-            <a class="popular-text" href="">Квадрокоптеры</a>
+            <a class="popular-text copter" href="">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="service-section">
         <h2 class="visually-hidden">Сервис</h2>
-        <ul>
-          <li>
-            <p>Доставка</p>
-          </li>
-          <li>
-            <p>Гарантия</p>
-          </li>
-          <li>
-            <p>Кредит</p>
-          </li>
-        </ul>
-        <p><h3>Доставка</h3></p>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему
-           подъезду совершенно бесплатно! Ведь мы неплохо
-           заработаем, поднимая его на ваш этаж.</p>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Компании партнеры</h2>
-        <ul>
-          <li><img src="" alt="DJI"></li>
-          <li><img src="" alt="SP GADGETS"></li>
-          <li><img src="" alt="GoPro"></li>
-          <li><img src="" alt="VIVE"></li>
-        </ul>
-      </section>
-      <section>
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика,
-           который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки
-           России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>
-            <p>Деловые линии</p>
-          </li>
-          <li>
-            <p>Автотрейдинг</p>
-          </li>
-          <li>
-            <p>ЖелДорЭкспедиция</p>
-          </li>
-        </ul>
-        <a href="">Подробнее о нас</a>
-      </section>
-      <section>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-           проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="">
-          Адрес нашего офиса: улица строителей 15
+        <div class="service-slider container">
+          <ul class="service-list style-none">
+            <li>
+              <a class="service-button" href="">Доставка</a>
+            </li>
+            <li>
+              <a class="service-button" href="">Гарантия</a>
+            </li>
+            <li>
+              <a class="service-button" href="">Кредит</a>
+            </li>
+          </ul>
+          <div class="service-text">
+            <p><h3>Доставка</h3></p>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему
+               подъезду совершенно бесплатно! Ведь мы неплохо
+               заработаем, поднимая его на ваш этаж.</p>
+          </div>
         </div>
-        <p>Напишите нам</p>
       </section>
-      <footer>
-        <section>
-        <a><img src="img/logo.svg" alt="Логотип компании"></a>
-        <ul>
+      <section class="partners-section container">
+        <h2 class="visually-hidden">Компании партнеры</h2>
+        <ul class="style-none partners-list">
+          <li><img class="dji" src="img/logo-p-1.svg" width="260" height="100" alt="DJI"></li>
+          <li><img class="gadgets" src="img/logo-p-2.svg" width="260" height="100" alt="SP GADGETS"></li>
+          <li><img class="gopro" src="img/logo-p-3.svg" width="260" height="100" alt="GoPro"></li>
+          <li><img class="vive" src="img/logo-p-4.svg" width="260" height="100" alt="VIVE"></li>
+        </ul>
+      </section>
+      <div class="about-us container">
+        <section class="about-us-1">
+          <h2>О нас</h2>
+          <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика,
+             который есть в каждом из нас.</p>
+          <p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки
+             России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="style-none about-ul">
+            <li>
+              <p>Деловые линии</p>
+            </li>
+            <li>
+              <p>Автотрейдинг</p>
+            </li>
+            <li>
+              <p>ЖелДорЭкспедиция</p>
+            </li>
+          </ul>
+          <a class="slider-about" href="">Подробнее о нас</a>
+        </section>
+        <section class="about-us-2">
+          <h2>Контакты</h2>
+          <p class="about-us-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+             проверить работоспособность покупки. Всякое бывает.</p>
+          <img src="img/map-1.png" width="560" height="222" alt="Наш адрес: улица Строителей, 15">
+          <a class="slider-about" href="">Напишите нам</a>
+        </section>
+      </div>
+      <div class="footer-bg">
+      <footer class="footer-line container">
+        <section class="footer-line-1">
+        <a><img src="img/logo-y.svg" width="163" height="35" alt="Логотип компании"></a>
+        <ul class="line-1-list style-none">
           <li><a href="">Войти</a></li>
           <li><a href="">Сравнить</a></li>
           <li><a href="">Корзина</a></li>
         </ul>
         </section>
-        <section>
+        <section class="footer-line-2">
           <h2 class="visually-hidden">Наши сервисы</h2>
-          <p>
+          <p class="adress">
             г. Москва, ул. Строителей, 15
           </p>
-          <ul>
+          <ul class="style-none line-2-list">
             <li><a href="">Доставка</a></li>
             <li><a href="">Гарантия</a></li>
             <li><a href="">Контакты</a></li>
@@ -194,6 +206,7 @@
           </ul>
         </section>
       </footer>
+      </div>
     </main>
 
 
