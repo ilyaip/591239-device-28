@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="main-header container">
+    <header class="catalog-header container">
       <a class="header-logo"><img src="img/logo.svg" width="163"  height="35" alt="Логотип компании"></a>
       <div class="header-line-1">
         <form class="header-search-form" action="http://echo.htmlacademy.ru/" method="post">
@@ -27,19 +27,21 @@
         </a>
       </div>
       <div class="header-line-2">
-        <a class="product-catalog">
-          Каталог товаров
-        </a>
-        <div class="catalog-menu">
-          <ul class="style-none menu-c">
-            <li><a href="">Виртуальная реальность</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Квадрокоптер</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Экшн-камеры</a></li>
-          </ul>
-        </div>
+        <ul class="style-none">
+          <li class="catalog-list">
+            <a class="product-catalog">
+              Каталог товаров
+            </a>
+            <ul class="style-none menu-c">
+              <li><a href="">Виртуальная реальность</a></li>
+              <li><a href="">Фитнес-браслеты</a></li>
+              <li><a href="">Квадрокоптер</a></li>
+              <li><a href="">Моноподы для селфи</a></li>
+              <li><a href="">Умные часы</a></li>
+              <li><a href="">Экшн-камеры</a></li>
+            </ul>
+          </li>
+        </ul>
         <ul class="style-none service">
           <li><a href="" class="delivery">Доставка</a></li>
           <li><a href="" class="guarantee">Гарантия</a></li>
@@ -47,5 +49,155 @@
         </ul>
       </div>
     </header>
+    <main>
+      <section class="crumb container">
+        <h2>Моноподы для селфи</h2>
+        <ul class="crumb-list style-none">
+          <li><a href="">Главная</a></li>
+          <li><a href="">Каталог товаров</a></li>
+          <li><a href="">Моноподы для селфи</a></li>
+        </ul>
+      </section>
+      <div class="filter-section container">
+        <section class="filter">
+          <form class="filter-form" action="http://echo.htmlacademy.ru/" method="post">
+            <h2>Фильтр:</h2>
+            <fieldset class="filter-1">
+              <legend class="filter-legend">Стоимость</legend>
+            </fieldset>
+            <fieldset class="filter-2">
+              <legend class="filter-legend">Цвет</legend>
+            <label>
+              <input type="checkbox" name="" value="">
+              Чёрный
+            </label>
+            <label>
+              <input type="checkbox" name="" value="">
+              Белый
+            </label>
+            <label>
+              <input type="checkbox" name="" value="">
+              Синий
+            </label>
+            <label>
+              <input type="checkbox" name="" value="">
+              Красный
+            </label>
+            <label>
+              <input type="checkbox" name="" value="">
+              Розовый
+            </label>
+          </fieldset>
+          <fieldset class="filter-3">
+            <legend class="filter-legend">Bluetooth</legend>
+            <label>
+              <input type="radio" name="bluetooth" value="Да">
+              Есть
+            </label>
+            <label>
+              <input type="radio" name="bluetooth" value="Нет">
+              Нет
+            </label>
+          </fieldset>
+          <button type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="sort-section">
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <div class="sort">
+            <p>Сортировка:</p>
+            <ul class="sort-result style-none">
+              <li><a href=""></a>По цене</li>
+              <li><a href=""></a>По типу</li>
+              <li><a href=""></a>По популярности</li>
+            </ul>
+          <a class="down-arrow actived-arrow" href="" aria-label="сортировать по убыванию">
+          </a>
+          <a class="up-arrow" href="" aria-label="сортировать по возрастанию">
+          </a>
+          </div>
+          <ul class="sort-result-list style-none">
+            <li>
+              <img src="img/item-1.jpg" width="360px" height="380px" alt="">
+              <p>Любительская селфи-палка</p>
+              <p> 500 руб.</p>
+            </li>
+            <li>
+              <img src="img/item-2.jpg" width="360" height="380" alt="">
+              <p>Профессиональная селфи-палка</p>
+              <p>1 500 руб.</p>
+            </li>
+            <li>
+              <img src="img/item-3.jpg" width="360" height="380" alt="">
+              <p>Непотопляемая селфи-палка</p>
+              <p>2 500 руб.</p>
+            </li>
+            <li>
+              <img src="img/item-4.jpg" width="360" height="380" alt="">
+              <p>Селфи-палка "Следуй за мной"</p>
+              <p>4 900 руб.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+
+
+
+
+    </main>
+    <div class="footer-bg">
+    <footer class="footer-line container">
+      <section class="footer-line-1">
+      <a><img src="img/logo-y.svg" width="163" height="35" alt="Логотип компании"></a>
+      <ul class="line-1-list style-none">
+        <li><a href="">Войти</a></li>
+        <li><a href="">Сравнить</a></li>
+        <li><a href="">Корзина</a></li>
+      </ul>
+      </section>
+      <section class="footer-line-2">
+        <h2 class="visually-hidden">Наши сервисы</h2>
+        <p class="adress">
+          г. Москва, ул. Строителей, 15
+        </p>
+        <ul class="style-none line-2-list">
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <p>
+          Тел.: +7 (495) 495-95-95
+        </p>
+      </section>
+      <section class="smm">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <ul class="social-column style-none">
+          <li>
+            <a class="social-networks" href="#" aria-label="twitter">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.95 1.14403C12.635 0.648028 13.934 1.41403 14.527 2.32303C15.2 2.09203 15.858 1.84203 16.538 1.61503C16.5249 2.30139 16.2117 2.94755 15.681 3.38303C16.366 3.55303 16.985 2.89203 16.985 2.89203C16.816 3.89203 15.979 4.68003 15.422 4.91603C15.191 11.666 12.247 16.133 5.34498 15.998H4.89898C4.48898 15.998 0.734977 15.538 0.000976562 14.111C2.27198 14.307 3.89398 13.689 4.69398 12.934C3.73398 12.634 2.01498 12.457 1.71498 9.98403C2.06398 10.09 2.27898 10.212 2.90498 10.103C1.70498 9.24703 0.373977 8.53003 0.447977 6.33003C0.732977 6.65803 1.51498 6.86603 1.78798 6.80203C1.08498 6.56103 -0.182023 3.44203 0.893977 1.85003C2.71198 3.70403 4.62898 5.45603 8.04598 5.62303C8.25398 3.33003 9.18298 1.79303 10.95 1.14403Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-networks" href="#" aria-label="facebook">
+              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-networks" href="#" aria-label="youtube">
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    </div>
   </body>
 </html>
